@@ -17,7 +17,7 @@ class TestCreatePet:
     pet_data = PreparePetData()
 
     def test_create_pet(self, get_test_name):
-        data = self.pet_data.data
+        data = self.pet_data.get_pet_json()
         response = self.request.post(url=self.url.create_pet, data=data)
         self.assertions.assert_status_code(
             response=response,

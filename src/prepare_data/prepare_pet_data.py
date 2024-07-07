@@ -1,19 +1,9 @@
+import json
+from functions import get_json_data
+
+
 class PreparePetData:
-    data = """{
-        "id": 12,
-        "category": {
-            "id": 56,
-            "name": "string222222222"
-        },
-        "name": "doggie",
-        "photoUrls": [
-            "string"
-        ],
-        "tags": [
-            {
-            "id": 5,
-            "name": "string"
-            }
-        ],
-        "status": "available"
-    }"""
+    
+    def get_pet_json(self):
+        json_data = get_json_data("pet_data.json")
+        return json.dumps(json_data)

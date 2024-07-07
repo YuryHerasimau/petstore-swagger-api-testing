@@ -29,3 +29,5 @@ ERROR | 2024-07-07 20:11:18 | Expected 405 but got 200 instead | file: tests/tes
 ERROR | 2024-07-07 20:12:02 | Expected 405 but got 200 instead | file: tests/test_pet/test_create_pet.py::TestCreatePet::test_create_pet (setup)
 ERROR | 2024-07-07 20:13:25 | Expected 500 but got 200 instead | file: tests/test_pet/test_create_pet.py::TestCreatePet::test_create_pet (setup)
 ERROR | 2024-07-07 22:15:41 | Expected 400 but got 200 instead | file: tests/test_pet/test_create_pet.py::TestCreatePet::test_create_pet (setup)
+ERROR | 2024-07-07 22:53:03 | Expected 400 but got 200 instead | file: tests/test_pet/test_create_pet.py::TestCreatePet::test_create_pet (setup)
+ERROR | 2024-07-07 22:57:47 | Expected 500 but got 200 instead | file: tests/test_pet/test_create_pet.py::TestCreatePet::test_create_pet (setup)
