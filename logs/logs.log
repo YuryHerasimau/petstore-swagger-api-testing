@@ -1,0 +1,2 @@
+ERROR | 2024-07-07 18:31:56 | Expected 200 but got 201 instead | file: (name)s
+ERROR | 2024-07-07 18:37:47 | Expected 200 but got 201 instead | file: tests/test_pet/test_create_pet.py::TestCreatePet::test_create_pet (setup)
