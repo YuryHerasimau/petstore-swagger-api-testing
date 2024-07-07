@@ -4,6 +4,7 @@ from src.http_methods import MyRequests
 from src.assertions import Assertions
 from src.validator import Validator
 from src.schemas import CreatePetSchemas
+from src.prepare_data.prepare_pet_data import PreparePetData
 from http import HTTPStatus
 
 
@@ -13,26 +14,10 @@ class TestCreatePet:
     url = get_pet_endpoints()
     assertions = Assertions()
     validator = Validator()
+    pet_data = PreparePetData()
 
     def test_create_pet(self, get_test_name):
-        data = """{
-            "id": 12,
-            "category": {
-                "id": 56,
-                "name": "string222222222"
-            },
-            "name": "doggie",
-            "photoUrls": [
-                "string"
-            ],
-            "tags": [
-                {
-                "id": 5,
-                "name": "string"
-                }
-            ],
-            "status": "available"
-        }"""
+        data = self.pet_data.data
         response = self.request.post(url=self.url.create_pet, data=data)
         self.assertions.assert_status_code(
             response=response,
