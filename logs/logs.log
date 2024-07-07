@@ -1,2 +1,30 @@
 ERROR | 2024-07-07 18:31:56 | Expected 200 but got 201 instead | file: (name)s
 ERROR | 2024-07-07 18:37:47 | Expected 200 but got 201 instead | file: tests/test_pet/test_create_pet.py::TestCreatePet::test_create_pet (setup)
+ERROR | 2024-07-07 19:45:29 | Invalid status: available1 | file: src.schemas.create_pet_schema
+ERROR | 2024-07-07 19:45:29 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: available1. Status must be one of ["available", "pending", "sold"] [type=value_error, input_value='available1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-07-07 19:47:26 | Invalid status: available1 | file: src.schemas.create_pet_schema
+ERROR | 2024-07-07 19:47:26 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: available1. Status must be one of ["available", "pending", "sold"] [type=value_error, input_value='available1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-07-07 19:48:40 | Invalid status: available1 | file: src.schemas.create_pet_schema
+ERROR | 2024-07-07 19:48:40 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: available1. Status must be one of ["available", "pending", "sold"] [type=value_error, input_value='available1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-07-07 19:52:07 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: available1. Status must be one of ["available", "pending", "sold"] [type=value_error, input_value='available1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-07-07 20:09:05 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: available1. Status must be one of ["available", "pending", "sold"] [type=value_error, input_value='available1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-07-07 20:10:30 | Expected 400 but got 200 instead | file: tests/test_pet/test_create_pet.py::TestCreatePet::test_create_pet (setup)
+ERROR | 2024-07-07 20:10:59 | Expected 405 but got 200 instead | file: tests/test_pet/test_create_pet.py::TestCreatePet::test_create_pet (setup)
+ERROR | 2024-07-07 20:11:18 | Expected 405 but got 200 instead | file: tests/test_pet/test_create_pet.py::TestCreatePet::test_create_pet (setup)
+ERROR | 2024-07-07 20:12:02 | Expected 405 but got 200 instead | file: tests/test_pet/test_create_pet.py::TestCreatePet::test_create_pet (setup)
+ERROR | 2024-07-07 20:13:25 | Expected 500 but got 200 instead | file: tests/test_pet/test_create_pet.py::TestCreatePet::test_create_pet (setup)

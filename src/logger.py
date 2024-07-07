@@ -28,7 +28,7 @@ def get_logger(name: str):
         filename=log_file,
         encoding="utf-8",
         maxBytes=max_bytes,
-        backupCount=10,  # total is 10 Mb
+        backupCount=10, # total is 10 Mb
     )
     handler.setFormatter(formatter)
     logger.addHandler(handler)

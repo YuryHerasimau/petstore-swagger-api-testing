@@ -2,6 +2,8 @@ import allure
 from data import get_pet_endpoints
 from src.http_methods import MyRequests
 from src.assertions import Assertions
+from src.validator import Validator
+from src.schemas import CreatePetSchemas
 from http import HTTPStatus
 
 
@@ -10,6 +12,7 @@ class TestCreatePet:
     request = MyRequests()
     url = get_pet_endpoints()
     assertions = Assertions()
+    validator = Validator()
 
     def test_create_pet(self, get_test_name):
         data = """{
@@ -36,4 +39,5 @@ class TestCreatePet:
             actual_status_code=HTTPStatus.OK,
             test_name=get_test_name
         )
+        self.validator.validate_response(response=response, model=CreatePetSchemas.create_pet)
         print(response.text)
