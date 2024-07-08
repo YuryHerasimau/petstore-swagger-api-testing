@@ -43,3 +43,19 @@ ERROR | 2024-07-08 18:34:02 | 1 validation error for CreatePetSchema
 category
   Field required [type=missing, input_value={'id': 59040, 'name': 'Cr..., 'status': 'available'}, input_type=dict]
     For further information visit https://errors.pydantic.dev/2.8/v/missing | file: src.validator
+ERROR | 2024-07-08 22:13:38 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ["available", "pending", "sold"] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-07-08 22:17:59 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-07-08 22:23:21 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-07-08 22:26:56 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator

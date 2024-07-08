@@ -1,0 +1,27 @@
+{
+    "id": 87682,
+    "category": {
+        "id": 22189,
+        "name": "Carol"
+    },
+    "name": "Angelica",
+    "photoUrls": [
+        "https://picsum.photos/280/510",
+        "https://placekitten.com/93/281"
+    ],
+    "tags": [
+        {
+            "id": 59499,
+            "name": "Jesse"
+        },
+        {
+            "id": 10055,
+            "name": "Scott"
+        },
+        {
+            "id": 96286,
+            "name": "Dr."
+        }
+    ],
+    "status": "available"
+}

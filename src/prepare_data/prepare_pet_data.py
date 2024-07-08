@@ -14,4 +14,5 @@ class PreparePetData(BaseTestData):
             tags=info.tags,
             status=info.status
         )
+        self.attach_request(data)
         return data.model_dump_json()
