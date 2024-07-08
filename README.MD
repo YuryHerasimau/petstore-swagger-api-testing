@@ -22,9 +22,9 @@ source env/Scripts/activate
 5. Сreate a `.env` file in the root directory based on the `.env.template`
 6. Finally, run the tests using pytest with the following command:
 ```
-pytest --alluredir=allure_result
+pytest --alluredir=allure-results
 ```
 7. After running the tests, serve the Allure report using the following command:
 ```
-allure serve allure_result
+allure serve allure-results
 ```

@@ -1,0 +1,4 @@
+[31m[1mERROR   [0m src.validator:validator.py:17 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error

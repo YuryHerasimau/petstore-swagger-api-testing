@@ -1,0 +1,18 @@
+{
+    "id": 85843,
+    "category": {
+        "id": 52304,
+        "name": "Laurie"
+    },
+    "name": "Mark",
+    "photoUrls": [
+        "https://dummyimage.com/329x880"
+    ],
+    "tags": [
+        {
+            "id": 54645,
+            "name": "Sarah"
+        }
+    ],
+    "status": "sold"
+}
