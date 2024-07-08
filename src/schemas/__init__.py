@@ -1,5 +1,5 @@
-from src.schemas import create_pet_schema
+from src.schemas import pet_response_schema
 
 
 class CreatePetSchemas:
-    create_pet = create_pet_schema.CreatePetSchema
+    create_pet = pet_response_schema.CreatePetSchema

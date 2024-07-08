@@ -20,8 +20,7 @@ class TestCreatePet:
 
     def test_create_pet(self, get_test_name):
         info = next(self.pet_generator.generate_pet()) # urls_count=10, tags_count=3
-        data = self.pet_data.prepare_pet_json(info=info) # key="tags"
-
+        data = self.pet_data.prepare_pet_json(info=info)
         response = self.request.post(url=self.url.create_pet, data=data)
         self.assertions.assert_status_code(
             response=response,
