@@ -31,3 +31,15 @@ ERROR | 2024-07-07 20:13:25 | Expected 500 but got 200 instead | file: tests/tes
 ERROR | 2024-07-07 22:15:41 | Expected 400 but got 200 instead | file: tests/test_pet/test_create_pet.py::TestCreatePet::test_create_pet (setup)
 ERROR | 2024-07-07 22:53:03 | Expected 400 but got 200 instead | file: tests/test_pet/test_create_pet.py::TestCreatePet::test_create_pet (setup)
 ERROR | 2024-07-07 22:57:47 | Expected 500 but got 200 instead | file: tests/test_pet/test_create_pet.py::TestCreatePet::test_create_pet (setup)
+ERROR | 2024-07-08 18:29:24 | 1 validation error for CreatePetSchema
+name
+  Field required [type=missing, input_value={'id': 40380, 'category':..., 'status': 'available'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing | file: src.validator
+ERROR | 2024-07-08 18:31:58 | 1 validation error for CreatePetSchema
+status
+  Field required [type=missing, input_value={'id': 30017, 'category':...13, 'name': 'Marissa'}]}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing | file: src.validator
+ERROR | 2024-07-08 18:34:02 | 1 validation error for CreatePetSchema
+category
+  Field required [type=missing, input_value={'id': 59040, 'name': 'Cr..., 'status': 'available'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing | file: src.validator

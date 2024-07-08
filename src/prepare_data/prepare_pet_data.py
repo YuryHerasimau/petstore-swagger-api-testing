@@ -1,20 +1,19 @@
-import json
-from functions import get_json_data
+from data.pet_data_class import PetDataClass
 from src.prepare_data.prepare_basic_data import BaseTestData
 
 
 class PreparePetData(BaseTestData):
     
-    def prepare_pet_json(self):
-        # json_data = get_json_data("pet_data.json")
-        # return json.dumps(json_data)
-
+    def prepare_pet_json(self, info: PetDataClass, key=None):
         data = {
-            "id": get_id(uid=uid),
-            "category": create_category(category_value=category_value),
-            "name": get_name(name=name),
-            "photoUrls": get_photo_urls(),
-            "tags": get_tags(),
-            "status": get_status()
+            "id": info.uid,
+            "category": info.category,
+            "name": info.name,
+            "photoUrls": info.photoUrls,
+            "tags": info.tags,
+            "status": info.status
         }
-        return data
+        # check what happens if some key is not in the request body
+        if key is not None:
+            data.pop(key)
+        return self.format_data_as_json(data=data)
