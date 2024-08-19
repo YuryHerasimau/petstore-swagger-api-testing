@@ -75,3 +75,87 @@ ERROR | 2024-07-08 22:47:22 | 1 validation error for CreatePetSchema
 status
   Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
     For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-07-10 11:04:44 | Expected 404 but got 200 instead | file: tests/test_pet/test_get_pet_by_id.py::TestGetPetById::test_get_pet_by_id (setup)
+ERROR | 2024-07-10 17:39:12 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-07-10 17:39:25 | Expected 404 but got 200 instead | file: tests/test_pet/test_get_pet_by_id.py::TestGetPetById::test_get_pet_by_id (setup)
+ERROR | 2024-07-10 19:29:19 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-07-10 19:33:04 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-07-10 19:35:29 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-07-12 16:27:37 | Expected 404 but got 200 instead | file: tests/test_pet/test_get_pet_by_id.py::TestGetPetById::test_get_pet_by_id (setup)
+ERROR | 2024-07-12 16:31:48 | Expected 404 but got 200 instead | file: tests/test_pet/test_get_pet_by_id.py::TestGetPetById::test_get_pet_by_id (setup)
+ERROR | 2024-07-12 18:38:14 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-08-17 19:14:28 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-08-17 19:19:41 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-08-17 19:32:02 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-08-17 19:32:58 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-08-17 19:33:50 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-08-19 13:10:31 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-08-19 13:14:10 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-08-19 13:49:27 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-08-19 13:50:18 | Expected 404 but got 400 instead | file: tests/test_pet/test_get_pet_by_id.py::TestGetPetById::test_get_pet_by_existing_id (setup)
+ERROR | 2024-08-19 13:52:19 | Expected 200 but got 400 instead | file: tests/test_pet/test_get_pet_by_id.py::TestGetPetById::test_get_pet_by_existing_id (setup)
+ERROR | 2024-08-19 13:57:35 | Expected 400 but got 404 instead | file: tests/test_pet/test_get_pet_by_id.py::TestGetPetById::test_get_pet_by_existing_id (setup)
+ERROR | 2024-08-19 13:58:53 | Expected 400 but got 200 instead | file: tests/test_pet/test_get_pet_by_id.py::TestGetPetById::test_get_pet_by_existing_id (setup)
+ERROR | 2024-08-19 14:00:04 | 2 validation errors for CreatePetSchema
+category
+  Field required [type=missing, input_value={'id': 2, 'photoUrls': []..., 'status': 'available'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing
+name
+  Field required [type=missing, input_value={'id': 2, 'photoUrls': []..., 'status': 'available'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.8/v/missing | file: src.validator
+ERROR | 2024-08-19 14:02:20 | Expected 400 but got 404 instead | file: tests/test_pet/test_get_pet_by_id.py::TestGetPetById::test_get_pet_by_invalid_id[None] (setup)
+ERROR | 2024-08-19 14:02:21 | Expected 400 but got 404 instead | file: tests/test_pet/test_get_pet_by_id.py::TestGetPetById::test_get_pet_by_invalid_id[0] (setup)
+ERROR | 2024-08-19 14:02:22 | Expected 400 but got 404 instead | file: tests/test_pet/test_get_pet_by_id.py::TestGetPetById::test_get_pet_by_invalid_id[-1] (setup)
+ERROR | 2024-08-19 14:02:23 | Expected 400 but got 404 instead | file: tests/test_pet/test_get_pet_by_id.py::TestGetPetById::test_get_pet_by_invalid_id[invalid_value] (setup)
+ERROR | 2024-08-19 14:06:07 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-08-19 14:07:41 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator
+ERROR | 2024-08-19 14:07:42 | Expected 200 but got 404 instead | file: tests/test_pet/test_get_pet_by_id.py::TestGetPetById::test_get_pet_by_existing_id (setup)
+ERROR | 2024-08-19 14:31:22 | 1 validation error for CreatePetSchema
+status
+  Value error, Invalid status: invalid_status. Status must be one of ['available', 'pending', 'sold'] [type=value_error, input_value='invalid_status', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.8/v/value_error | file: src.validator

@@ -1,5 +1,6 @@
 import allure
 import pytest
+import json
 from data import get_pet_endpoints
 from data.data import PetData
 from src.http_methods import MyRequests
@@ -21,17 +22,25 @@ class TestCreatePet:
     pet_generator = PetGenerator()
 
     @allure.title("Create pet")
-    def test_create_pet(self, get_test_name):
+    def test_create_pet_and_get_it(self, get_test_name):
         info = next(self.pet_generator.generate_pet(urls_count=2, tags_count=3))
         data = self.pet_data.prepare_pet_json(info=info)
         response = self.request.post(url=self.url.create_pet, data=data)
         self.assertions.assert_status_code(
             response=response,
-            actual_status_code=HTTPStatus.OK,
+            expected_status_code=HTTPStatus.OK,
             test_name=get_test_name
         )
         self.validator.validate_response(response=response, model=CreatePetSchemas.create_pet)
 
+        pet_id = response.json()["id"]
+        response_get = self.request.get(url=self.url.get_pet_by_id(petId=pet_id))
+        self.assertions.assert_status_code(
+            response=response_get,
+            expected_status_code=HTTPStatus.OK,
+            test_name=get_test_name
+        )
+        self.validator.validate_response(response=response_get, model=CreatePetSchemas.create_pet)
 
     @allure.title("Create pet with valid status")
     @pytest.mark.parametrize("status", PetData.status)
@@ -41,7 +50,7 @@ class TestCreatePet:
         response = self.request.post(url=self.url.create_pet, data=data)
         self.assertions.assert_status_code(
             response=response,
-            actual_status_code=HTTPStatus.OK,
+            expected_status_code=HTTPStatus.OK,
             test_name=get_test_name
         )
         self.validator.validate_response(response=response, model=CreatePetSchemas.create_pet)
@@ -54,7 +63,7 @@ class TestCreatePet:
         response = self.request.post(url=self.url.create_pet, data=data)
         self.assertions.assert_status_code(
             response=response,
-            actual_status_code=HTTPStatus.OK,
+            expected_status_code=HTTPStatus.OK,
             test_name=get_test_name
         )
         self.validator.validate_response(response=response, model=CreatePetSchemas.create_pet)

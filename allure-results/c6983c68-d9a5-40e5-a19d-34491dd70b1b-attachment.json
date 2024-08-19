@@ -1,0 +1,27 @@
+{
+    "id": 15265,
+    "category": {
+        "id": 83715,
+        "name": "Patrick"
+    },
+    "name": "Joshua",
+    "photoUrls": [
+        "https://dummyimage.com/420x865",
+        "https://placekitten.com/183/629"
+    ],
+    "tags": [
+        {
+            "id": 91160,
+            "name": "Kaitlyn"
+        },
+        {
+            "id": 95155,
+            "name": "Justin"
+        },
+        {
+            "id": 13852,
+            "name": "Vincent"
+        }
+    ],
+    "status": "available"
+}

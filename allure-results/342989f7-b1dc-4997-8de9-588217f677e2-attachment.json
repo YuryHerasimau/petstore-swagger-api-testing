@@ -1,0 +1,18 @@
+{
+    "id": 53894,
+    "category": {
+        "id": 11640,
+        "name": "Connor"
+    },
+    "name": "Kevin",
+    "photoUrls": [
+        "https://picsum.photos/180/265"
+    ],
+    "tags": [
+        {
+            "id": 60036,
+            "name": "Hayden"
+        }
+    ],
+    "status": "sold"
+}

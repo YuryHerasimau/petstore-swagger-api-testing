@@ -1,0 +1,18 @@
+{
+    "id": 27780,
+    "category": {
+        "id": 99959,
+        "name": "Lisa"
+    },
+    "name": "Timothy",
+    "photoUrls": [
+        "https://dummyimage.com/314x913"
+    ],
+    "tags": [
+        {
+            "id": 69570,
+            "name": "Cody"
+        }
+    ],
+    "status": "available"
+}

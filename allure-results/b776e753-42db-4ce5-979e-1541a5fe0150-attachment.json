@@ -1,0 +1,18 @@
+{
+    "id": 64060,
+    "category": {
+        "id": 33564,
+        "name": "Ann"
+    },
+    "name": "Amanda",
+    "photoUrls": [
+        "https://picsum.photos/475/832"
+    ],
+    "tags": [
+        {
+            "id": 46665,
+            "name": "Donald"
+        }
+    ],
+    "status": "invalid_status"
+}
